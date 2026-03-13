@@ -1,0 +1,19 @@
+<Window x:Class="WpfApp3.AddGroupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Группа" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid Margin="15">
+        <StackPanel>
+            <TextBlock Text="Название группы:" Margin="0,5,0,0"/>
+            <TextBox x:Name="tbGroupName" Margin="0,0,0,10"/>
+            
+            <TextBlock Text="Факультет:" Margin="0,0,0,0"/>
+            <TextBox x:Name="tbFaculty" Margin="0,0,0,10"/>
+            
+            <TextBlock Text="Курс (1-6):" Margin="0,0,0,0"/>
+            <TextBox x:Name="tbCourse" Margin="0,0,0,10"/>
+            
+            <Button Content="Сохранить" Background="#007ACC" Foreground="White" Padding="10,5" Margin="0,15,0,0" Click="BtnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

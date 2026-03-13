@@ -1,0 +1,16 @@
+<Window x:Class="WpfApp3.EditGradeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактировать оценку" Height="250" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid Margin="15">
+        <StackPanel>
+            <TextBlock Text="Оценка (2-5):" Margin="0,5,0,0"/>
+            <TextBox x:Name="tbGrade" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Дата выставления:" Margin="0,0,0,0"/>
+            <DatePicker x:Name="dpGradeDate" Margin="0,0,0,10"/>
+
+            <Button Content="Сохранить" Background="#007ACC" Foreground="White" Padding="10,5" Margin="0,15,0,0" Click="BtnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

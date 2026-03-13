@@ -1,0 +1,16 @@
+<Window x:Class="WpfApp3.AssignTeacherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Назначить преподавателя" Height="300" Width="350" WindowStartupLocation="CenterScreen">
+    <Grid Margin="15">
+        <StackPanel>
+            <TextBlock Text="Преподаватель:" Margin="0,5,0,0"/>
+            <ComboBox x:Name="cbTeachers" Margin="0,0,0,10" DisplayMemberPath="FullName"/>
+
+            <TextBlock Text="Предмет:" Margin="0,0,0,0"/>
+            <ComboBox x:Name="cbSubjects" Margin="0,0,0,10" DisplayMemberPath="SubjectName"/>
+
+            <Button Content="Сохранить" Background="#007ACC" Foreground="White" Padding="10,5" Margin="0,15,0,0" Click="BtnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
